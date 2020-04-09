@@ -24,8 +24,11 @@ python mots_eval/eval.py tracking_results gt_folder seqmap
 where "seqmap" is a textfile containing the sequences which you want to evaluate on. Several seqmaps are already provided in the mots_eval repository: val.seqmap, train.seqmap, fulltrain.seqmap, val_MOTSchallenge.seqmap which correspond to the KITTI MOTS validation set, the KITTI MOTS training set, both KITTI MOTS sets combined and the four annotated MOTSChallenge sequences respectively.
 
 For generate this file manually see structure above. This is very simple text file:
+
 <seq_id> empty <start_frame> <end_frame>
+
 for example
+
 0000 empty 000000 000153
 
 Parts of the evaluation logic are built upon the KITTI 2D tracking evaluation devkit from http://www.cvlibs.net/datasets/kitti/eval_tracking.php
